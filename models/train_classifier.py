@@ -90,13 +90,15 @@ def tokenize(text):
 def build_model():
     '''
     Building a pipeline model after parameter tuning
+    Note: The parameters for actual GridSearchCV is commented due to 
+          the process might take high runtime to successfully run
 
     Args:
         None
 
     Returns:
-        pipeline: machine learning pipeline model; combination of NLP 
-                  and classifier (AdaBoostClassifier)
+        grid: machine learning pipeline model; combination of NLP 
+              and classifier (AdaBoostClassifier)
     '''
     pipeline = Pipeline([
         ('features', FeatureUnion([
@@ -109,11 +111,22 @@ def build_model():
             ('starting_verb', StartingVerbExtractor())
         ])),
 
-        ('clf', MultiOutputClassifier(estimator = AdaBoostClassifier(n_estimators = 50, 
-                                                                     learning_rate = 1.2)))
+        ('clf', MultiOutputClassifier(estimator = AdaBoostClassifier()))
     ])
     
-    return pipeline
+    # parameters = {
+    #    'clf__estimator__n_estimators': [50, 100],
+    #    'clf__estimator__learning_rate': [1, 1.2]
+    # }
+    
+    parameters = {
+        'clf__estimator__n_estimators': [50],
+        'clf__estimator__learning_rate': [1]
+    }
+    
+    grid = GridSearchCV(estimator = pipeline, param_grid = parameters, cv = 3) 
+    
+    return grid
     
 
 def evaluate_model(model, X_test, Y_test, category_names):
