@@ -56,7 +56,8 @@ The files are organized as follows. In addition to what is required by Udacity, 
 |- disaster_categories.csv  # data to process 
 |- disaster_messages.csv  # data to process
 |- process_data.py
-|- InsertDatabaseName.db   # database to save clean data to
+|- ETL_pipeline.ipynb
+|- DisasterResponse.db   # database to save clean data to
 
 - figures
 |- disaster_response_query.png # screenshot of front page web app
@@ -64,7 +65,8 @@ The files are organized as follows. In addition to what is required by Udacity, 
 
 - models
 |- train_classifier.py
-|- classifier.pkl  # saved model 
+|- classifier.pkl  # saved model
+|- ML_pipeline.ipynb
 
 - README.md
 ```
