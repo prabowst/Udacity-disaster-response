@@ -2,6 +2,8 @@
 
 This project includes the deliverables for Udacity Data Science Nanodegree Program: Disaster Response Pipeline Project.
 
+![Screenshot Header](figures/disaster_response_front.png)
+
 ### Table of Contents 
 
 1. [Requirements](#requirements)
@@ -15,16 +17,16 @@ This project includes the deliverables for Udacity Data Science Nanodegree Progr
 
 The code runs using Python version 3. Below are the list of packages used within this project.
 
-- pandas
-- numpy 
-- sqlalchemy
-- pickle
-- nltk
-- sklearn
-- json
-- plotly
-- joblib
-- flask
+1. pandas
+2. numpy 
+3. sqlalchemy
+4. pickle
+5. nltk
+6. sklearn
+7. json
+8. plotly
+9. joblib
+10. flask
 
 ### Project Description<a name="description"></a>
 
@@ -90,11 +92,9 @@ Go to http://0.0.0.0:3001/ OR http://localhost:3001 to open the web app.
 
 ### Project Results<a name="results"></a>
 
-The project results are shown by the screenshots below:
+The project results are shown by the screenshot below:
 
-- Front view of Web App
-
-- Query results of Web App
+![Screenshot Result](figures/disaster_response_query.png)
 
 ### Licensing and Acknowledgements<a name="licensing"></a>
 
