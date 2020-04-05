@@ -43,39 +43,39 @@ The web app is provided by Udacity with little changes done within the scope of 
 
 The files are organized as follows. In addition to what is required by Udacity, a `figures` folder is added containing several screenshots of the web app results.
 
-`- app
-| - template
-| |- master.html  # main page of web app
-| |- go.html  # classification result page of web app
-|- run.py  # Flask file that runs app
+`- app`
+`| - template`
+`| |- master.html  # main page of web app`
+`| |- go.html  # classification result page of web app`
+`|- run.py  # Flask file that runs app`
 
-- data
-`|- disaster_categories.csv  # data to process 
-|- disaster_messages.csv  # data to process
-|- process_data.py
-|- InsertDatabaseName.db   # database to save clean data to
+`- data`
+`|- disaster_categories.csv  # data to process`
+`|- disaster_messages.csv  # data to process`
+`|- process_data.py`
+`|- InsertDatabaseName.db   # database to save clean data to`
 
-- figures
-`|- disaster_response_front.png # screenshot of front page web app
-|- disaster_response_query.png # screenshot of query page web app
+`- figures`
+`|- disaster_response_front.png # screenshot of front page web app`
+`|- disaster_response_query.png # screenshot of query page web app`
 
-- models
-`|- train_classifier.py
-|- classifier.pkl  # saved model 
+`- models`
+`|- train_classifier.py`
+`|- classifier.pkl  # saved model` 
 
-- README.md
+`- README.md`
 
 ### Run<a name="run"></a>
 
 Instructions on how to run the program:
 
 1. Run the following command in the project's root directory to set up your database.
-  - ETL Pipeline: `python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db`
+ETL Pipeline: `python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db`
 2. Run the following command in the project's root directory to set up your model.
-  - ML Pipeline: `python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl`
+ML Pipeline: `python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl`
 3. Run the following command in the project's root directory to run your web app.
-  - Web App: `python app/run.py` 
-    Go to http://0.0.0.0:3001/ OR http://localhost:3001 to open the web app.
+Web App: `python app/run.py` 
+Go to http://0.0.0.0:3001/ OR http://localhost:3001 to open the web app.
 
 ### Project Results<a name="results"></a>
 
