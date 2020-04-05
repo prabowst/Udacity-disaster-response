@@ -2,7 +2,7 @@
 
 This project includes the deliverables for Udacity Data Science Nanodegree Program: Disaster Response Pipeline Project.
 
-![Screenshot Header](figures/disaster_response_front.png)
+![front](figures/disaster_response_front.png)
 
 ### Table of Contents 
 
@@ -94,7 +94,7 @@ Go to http://0.0.0.0:3001/ OR http://localhost:3001 to open the web app.
 
 The project results are shown by the screenshot below:
 
-![Screenshot Result](figures/disaster_response_query.png)
+![query](figures/disaster_response_query.png)
 
 ### Licensing and Acknowledgements<a name="licensing"></a>
 
